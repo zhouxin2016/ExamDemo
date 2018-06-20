@@ -9,20 +9,42 @@ package com.migu.schedule.info;
 public class TaskInfo
 {
     private int taskId;
+    
     private int nodeId;
+    
+    // 资源消耗率
+    private int consumption;
+    
     public int getNodeId()
     {
         return nodeId;
     }
-    public int getTaskId(){  return taskId; }
+    
+    public int getTaskId()
+    {
+        return taskId;
+    }
+    
     public void setNodeId(int nodeId)
     {
         this.nodeId = nodeId;
     }
+    
     public void setTaskId(int taskId)
     {
         this.taskId = taskId;
     }
+    
+    public int getConsumption()
+    {
+        return consumption;
+    }
+    
+    public void setConsumption(int consumption)
+    {
+        this.consumption = consumption;
+    }
+    
     @Override
     public String toString()
     {
